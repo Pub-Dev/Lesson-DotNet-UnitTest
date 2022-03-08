@@ -16,10 +16,10 @@ jobs:
           dotnet-version: 6.0.x
           
       - name: Restore dependencies
-        run: dotnet restore .\PubDev.UnitTest.sln
+        run: dotnet restore ./PubDev.UnitTest.sln
         
       - name: Build
-        run: dotnet build .\PubDev.UnitTest.sln --no-restore
+        run: dotnet build ./PubDev.UnitTest.sln --no-restore
         
       #- name: Test
       #  run: dotnet test --no-build --verbosity normal
@@ -62,5 +62,5 @@ jobs:
         shell: pwsh
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"Pub-Dev_Lesson-DotNet-UnitTest" /o:"pub-dev" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-          dotnet build .\PubDev.UnitTest.sln --no-restore
+          dotnet build ./PubDev.UnitTest.sln --no-restore
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
