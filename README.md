@@ -3,6 +3,12 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Pub-Dev_Lesson-DotNet-UnitTest&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Pub-Dev_Lesson-DotNet-UnitTest)
+[![Build and Test](https://github.com/Pub-Dev/Lesson-DotNet-UnitTest/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/Pub-Dev/Lesson-DotNet-UnitTest/actions/workflows/build.yml)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Pub-Dev_Lesson-DotNet-UnitTest&metric=bugs)](https://sonarcloud.io/summary/new_code?id=Pub-Dev_Lesson-DotNet-UnitTest)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Pub-Dev_Lesson-DotNet-UnitTest&metric=coverage)](https://sonarcloud.io/summary/new_code?id=Pub-Dev_Lesson-DotNet-UnitTest)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Pub-Dev_Lesson-DotNet-UnitTest&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=Pub-Dev_Lesson-DotNet-UnitTest)
+
 ## Pub Dev Unit Tests 📚🕹
 
 this read-me still under development, We had time to develop the whole solution but not to create a good read-me 😜
