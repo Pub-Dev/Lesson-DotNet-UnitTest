@@ -8,6 +8,7 @@
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Pub-Dev_Lesson-DotNet-UnitTest&metric=bugs)](https://sonarcloud.io/summary/new_code?id=Pub-Dev_Lesson-DotNet-UnitTest)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Pub-Dev_Lesson-DotNet-UnitTest&metric=coverage)](https://sonarcloud.io/summary/new_code?id=Pub-Dev_Lesson-DotNet-UnitTest)
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Pub-Dev_Lesson-DotNet-UnitTest&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=Pub-Dev_Lesson-DotNet-UnitTest)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=Pub-Dev_Lesson-DotNet-UnitTest&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=Pub-Dev_Lesson-DotNet-UnitTest)
 
 ## Pub Dev Unit Tests 📚🕹
 
