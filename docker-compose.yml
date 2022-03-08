@@ -1,0 +1,16 @@
+version: "3.4"
+services:
+  sql-server:
+    container_name: pub-dev-sql
+    user: root
+    image: mcr.microsoft.com/mssql/server
+    volumes:
+      - mssql-server-linux-data:/var/opt/mssql/data
+    environment:
+      MSSQL_SA_PASSWORD: "Pass@word"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "5433:1433"
+volumes:
+  mssql-server-linux-data:
+    driver: local
