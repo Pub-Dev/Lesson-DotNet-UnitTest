@@ -16,10 +16,10 @@ jobs:
           dotnet-version: 6.0.x
           
       - name: Restore dependencies
-        run: dotnet restore ./PubDev.UnitTest.sln
+        run: dotnet restore PubDev.UnitTest.sln
         
       - name: Build
-        run: dotnet build ./PubDev.UnitTest.sln --no-restore
+        run: dotnet build PubDev.UnitTest.sln --no-restore
         
       #- name: Test
       #  run: dotnet test --no-build --verbosity normal
