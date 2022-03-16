@@ -25,8 +25,8 @@ jobs:
       - name: Build
         run: dotnet build ./PubDev.UnitTest.sln --no-restore
         
-      #- name: Test
-      #  run: dotnet test --no-build --verbosity normal
+      - name: Test
+        run: dotnet test ./PubDev.UnitTest.sln /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
         
       - name: Set up JDK 11
         uses: actions/setup-java@v1
