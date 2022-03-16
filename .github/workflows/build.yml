@@ -73,7 +73,12 @@ jobs:
           ./.sonar/scanner/dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
           
       - name: Run Mutations
+        if: steps.branch-name.outputs.is_default == 'false'
         run: dotnet stryker -tp "tests/API.Tests/PubDev.Store.API.Tests.csproj"  --reporter "dashboard" --with-baseline:${{ steps.branch-name.outputs.base_ref_branch }} --dashboard-api-key ${{ secrets.STRYKER_API_KEY }} --version ${{ steps.branch-name.outputs.head_ref_branch }}
+        
+      - name: Run Mutations
+        if: steps.branch-name.outputs.is_default == 'true'
+        run: dotnet stryker -tp "tests/API.Tests/PubDev.Store.API.Tests.csproj"  --reporter "dashboard" --with-baseline:main --dashboard-api-key ${{ secrets.STRYKER_API_KEY }} --version main
 
       - name: "Comment PR"
         uses: actions/github-script@0.3.0
