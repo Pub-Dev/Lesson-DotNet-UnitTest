@@ -1,4 +1,6 @@
-﻿namespace PubDev.Store.API.Tests.Services;
+﻿using PubDev.Store.API.Tests.TestCases;
+
+namespace PubDev.Store.API.Tests.Services;
 
 public class OrderServiceTest
 {
@@ -191,8 +193,21 @@ public class OrderServiceTest
             ClientId = 1,
             OrderProducts = new List<OrderProduct>()
             {
-                new OrderProduct(){ ProductId = 1, Quantity = 1 },
-                new OrderProduct(){ ProductId = 1, Quantity = 1 }
+                new OrderProduct()
+                {
+                    ProductId = 1,
+                    Quantity = 1
+                },
+                new OrderProduct()
+                {
+                    ProductId = 1,
+                    Quantity = 1
+                },
+                new OrderProduct()
+                {
+                    ProductId = 2,
+                    Quantity = 1
+                },
             }
         };
 
@@ -232,7 +247,11 @@ public class OrderServiceTest
             ClientId = 1,
             OrderProducts = new List<OrderProduct>()
             {
-                new OrderProduct(){ ProductId = 1, Quantity = 1 }
+                new OrderProduct()
+                {
+                    ProductId = 1,
+                    Quantity = 1 
+                }
             }
         };
 
@@ -272,7 +291,11 @@ public class OrderServiceTest
             ClientId = 1,
             OrderProducts = new List<OrderProduct>()
             {
-                new OrderProduct(){ ProductId = 1, Quantity = -1 }
+                new OrderProduct()
+                { 
+                    ProductId = 1, 
+                    Quantity = -1 
+                }
             }
         };
 
@@ -292,8 +315,10 @@ public class OrderServiceTest
             x => x.CreateAsync(It.IsAny<int>(), It.IsAny<IEnumerable<OrderProduct>>()), Times.Never);
     }
 
-    [Fact]
-    public async Task CreateAsync_WithProductNotFoundAndWithInvalidQuantity_ReturnsNull()
+    [Theory]
+    [MemberData(nameof(OrderServiceTestCase.WithProductNotFoundAndWithInvalidQuantity), MemberType = typeof(OrderServiceTestCase))]
+
+    public async Task CreateAsync_WithProductNotFoundAndWithInvalidQuantity_ReturnsNull(Order order)
     {
         // arrange
         _mockClientRepository
@@ -305,19 +330,7 @@ public class OrderServiceTest
             .ReturnsAsync(default(Product));
 
         var service = GetOrderService();
-        var order = new Order()
-        {
-            ClientId = 1,
-            OrderProducts = new List<OrderProduct>()
-            {
-                new OrderProduct()
-                {
-                    ProductId = 1,
-                    Quantity = -1
-                }
-            }
-        };
-
+        
         // act
         var data = await service.CreateAsync(order);
 
