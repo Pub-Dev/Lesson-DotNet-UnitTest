@@ -45,7 +45,15 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const { issue: { number: issue_number }, repo: { owner, repo }  } = context;
-            github.issues.createComment({ issue_number, owner, repo, body: '**Stryker** report generated at https://dashboard.stryker-mutator.io/reports/github.com/Pub-Dev/Lesson-DotNet-UnitTest/${{ steps.branch-name.outputs.head_ref_branch }}' });
+            github.issues.createComment({ 
+              issue_number, 
+              owner, 
+              repo, 
+              body: '🚀 **Stryker report generated** 🚀
+                [![Mutation testing badge](https://img.shields.io/endpoint?style=for-the-badge&url=https://badge-api.stryker-mutator.io/github.com/Pub-Dev/Lesson-DotNet-UnitTest/feature/${{ steps.branch-name.outputs.head_ref_branch }})](https://dashboard.stryker-mutator.io/reports/github.com/Pub-Dev/Lesson-DotNet-UnitTest/${{ steps.branch-name.outputs.head_ref_branch }})
+                to more details: https://dashboard.stryker-mutator.io/reports/github.com/Pub-Dev/Lesson-DotNet-UnitTest/${{ steps.branch-name.outputs.head_ref_branch }}
+              '
+            });
 
       - name: Set up JDK 11
         uses: actions/setup-java@v1
