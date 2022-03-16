@@ -1,0 +1,3001 @@
+{
+  "PubDev.UnitTests.API.dll": {
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Program.cs": {
+      "Program": {
+        "System.Void Program::<Main>$(System.String[])": {
+          "Lines": {
+            "11": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "47": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "55": 0,
+            "57": 0,
+            "59": 0,
+            "61": 0,
+            "63": 0
+          },
+          "Branches": [
+            {
+              "Line": 49,
+              "Offset": 196,
+              "EndOffset": 198,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 49,
+              "Offset": 196,
+              "EndOffset": 216,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 32,
+              "Offset": 22,
+              "EndOffset": 24,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 32,
+              "Offset": 22,
+              "EndOffset": 30,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\ErrorMessage.cs": {
+      "PubDev.UnitTests.API.ErrorMessage": {
+        "System.String PubDev.UnitTests.API.ErrorMessage::get_ErrorCode()": {
+          "Lines": {
+            "7": 31
+          },
+          "Branches": []
+        },
+        "System.String PubDev.UnitTests.API.ErrorMessage::get_Message()": {
+          "Lines": {
+            "8": 30
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Enums.ErrorType PubDev.UnitTests.API.ErrorMessage::get_ErrorType()": {
+          "Lines": {
+            "9": 30
+          },
+          "Branches": []
+        },
+        "System.Void PubDev.UnitTests.API.ErrorMessage::.ctor(System.String,System.String,PubDev.UnitTests.API.Enums.ErrorType)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\NotificationContext.cs": {
+      "PubDev.UnitTests.API.NotificationContext": {
+        "System.Collections.Generic.IReadOnlyCollection`1<PubDev.UnitTests.API.ErrorMessage> PubDev.UnitTests.API.NotificationContext::get_ErrorMessages()": {
+          "Lines": {
+            "8": 15
+          },
+          "Branches": []
+        },
+        "System.Boolean PubDev.UnitTests.API.NotificationContext::get_IsValid()": {
+          "Lines": {
+            "9": 25
+          },
+          "Branches": []
+        },
+        "System.Void PubDev.UnitTests.API.NotificationContext::AddNotification(PubDev.UnitTests.API.ErrorMessage)": {
+          "Lines": {
+            "14": 0,
+            "15": 0,
+            "16": 0
+          },
+          "Branches": []
+        },
+        "System.Void PubDev.UnitTests.API.NotificationContext::AddNotification(System.String,System.String)": {
+          "Lines": {
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0
+          },
+          "Branches": []
+        },
+        "System.Void PubDev.UnitTests.API.NotificationContext::AddNotification(System.String,System.String,PubDev.UnitTests.API.Enums.ErrorType)": {
+          "Lines": {
+            "29": 15,
+            "30": 15,
+            "31": 15,
+            "32": 15,
+            "33": 15,
+            "34": 15,
+            "35": 15,
+            "36": 15
+          },
+          "Branches": []
+        },
+        "System.Void PubDev.UnitTests.API.NotificationContext::.ctor()": {
+          "Lines": {
+            "11": 25
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Services\\ClientService.cs": {
+      "PubDev.UnitTests.API.Services.ClientService": {
+        "System.Void PubDev.UnitTests.API.Services.ClientService::.ctor(PubDev.UnitTests.API.NotificationContext,PubDev.UnitTests.API.Interfaces.Repositories.IClientRepository)": {
+          "Lines": {
+            "13": 6,
+            "14": 6,
+            "15": 6,
+            "16": 6,
+            "17": 6,
+            "18": 6,
+            "19": 6
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Services.ClientService/<CreateAsync>d__5": {
+        "System.Void PubDev.UnitTests.API.Services.ClientService/<CreateAsync>d__5::MoveNext()": {
+          "Lines": {
+            "41": 1,
+            "42": 1,
+            "43": 1
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Services.ClientService/<GetAllAsync>d__3": {
+        "System.Void PubDev.UnitTests.API.Services.ClientService/<GetAllAsync>d__3::MoveNext()": {
+          "Lines": {
+            "22": 1,
+            "23": 1,
+            "24": 1
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Services.ClientService/<GetByIdAsync>d__4": {
+        "System.Void PubDev.UnitTests.API.Services.ClientService/<GetByIdAsync>d__4::MoveNext()": {
+          "Lines": {
+            "27": 2,
+            "28": 2,
+            "30": 2,
+            "31": 1,
+            "32": 1,
+            "35": 1,
+            "37": 1,
+            "38": 2
+          },
+          "Branches": [
+            {
+              "Line": 30,
+              "Offset": 164,
+              "EndOffset": 166,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 30,
+              "Offset": 164,
+              "EndOffset": 176,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        }
+      },
+      "PubDev.UnitTests.API.Services.ClientService/<UpdateAsync>d__6": {
+        "System.Void PubDev.UnitTests.API.Services.ClientService/<UpdateAsync>d__6::MoveNext()": {
+          "Lines": {
+            "46": 2,
+            "47": 2,
+            "49": 2,
+            "50": 1,
+            "51": 1,
+            "54": 1,
+            "56": 1,
+            "57": 2
+          },
+          "Branches": [
+            {
+              "Line": 49,
+              "Offset": 180,
+              "EndOffset": 185,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 49,
+              "Offset": 180,
+              "EndOffset": 315,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Services\\OrderService.cs": {
+      "PubDev.UnitTests.API.Services.OrderService": {
+        "System.Threading.Tasks.Task`1<System.Collections.Generic.IEnumerable`1<PubDev.UnitTests.API.Entities.Order>> PubDev.UnitTests.API.Services.OrderService::GetAllAsync()": {
+          "Lines": {
+            "31": 1,
+            "32": 1,
+            "33": 1
+          },
+          "Branches": []
+        },
+        "System.Void PubDev.UnitTests.API.Services.OrderService::.ctor(PubDev.UnitTests.API.NotificationContext,PubDev.UnitTests.API.Interfaces.Repositories.IOrderRepository,PubDev.UnitTests.API.Interfaces.Repositories.IClientRepository,PubDev.UnitTests.API.Interfaces.Repositories.IProductRepository,PubDev.UnitTests.API.Interfaces.Repositories.IOrderProductRepository)": {
+          "Lines": {
+            "16": 11,
+            "17": 11,
+            "18": 11,
+            "19": 11,
+            "20": 11,
+            "21": 11,
+            "22": 11,
+            "23": 11,
+            "24": 11,
+            "25": 11,
+            "26": 11,
+            "27": 11,
+            "28": 11
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Services.OrderService/<>c": {
+        "System.Int32 PubDev.UnitTests.API.Services.OrderService/<>c::<CreateAsync>b__8_0(PubDev.UnitTests.API.Entities.OrderProduct)": {
+          "Lines": {
+            "67": 11
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Services.OrderService/<CreateAsync>d__8": {
+        "System.Void PubDev.UnitTests.API.Services.OrderService/<CreateAsync>d__8::MoveNext()": {
+          "Lines": {
+            "50": 8,
+            "51": 8,
+            "53": 8,
+            "54": 1,
+            "55": 1,
+            "57": 1,
+            "60": 7,
+            "61": 2,
+            "62": 2,
+            "64": 2,
+            "69": 5,
+            "70": 1,
+            "71": 1,
+            "73": 1,
+            "76": 20,
+            "77": 4,
+            "78": 4,
+            "80": 4,
+            "81": 2,
+            "82": 2,
+            "83": 2,
+            "85": 4,
+            "86": 2,
+            "87": 2,
+            "88": 2,
+            "89": 2,
+            "90": 2,
+            "91": 4,
+            "93": 4,
+            "94": 1,
+            "95": 1,
+            "97": 1,
+            "99": 1,
+            "102": 3,
+            "103": 8
+          },
+          "Branches": [
+            {
+              "Line": 53,
+              "Offset": 212,
+              "EndOffset": 214,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 53,
+              "Offset": 212,
+              "EndOffset": 307,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 7
+            },
+            {
+              "Line": 60,
+              "Offset": 318,
+              "EndOffset": 320,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 6
+            },
+            {
+              "Line": 60,
+              "Offset": 318,
+              "EndOffset": 341,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            },
+            {
+              "Line": 60,
+              "Offset": 346,
+              "EndOffset": 348,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 2
+            },
+            {
+              "Line": 60,
+              "Offset": 346,
+              "EndOffset": 384,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 5
+            },
+            {
+              "Line": 69,
+              "Offset": 475,
+              "EndOffset": 477,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 1
+            },
+            {
+              "Line": 69,
+              "Offset": 475,
+              "EndOffset": 513,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 4
+            },
+            {
+              "Line": 76,
+              "Offset": 976,
+              "EndOffset": 550,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 4
+            },
+            {
+              "Line": 80,
+              "Offset": 725,
+              "EndOffset": 727,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 2
+            },
+            {
+              "Line": 80,
+              "Offset": 725,
+              "EndOffset": 814,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 4
+            },
+            {
+              "Line": 85,
+              "Offset": 835,
+              "EndOffset": 837,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 2
+            },
+            {
+              "Line": 85,
+              "Offset": 835,
+              "EndOffset": 950,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 4
+            },
+            {
+              "Line": 76,
+              "Offset": 976,
+              "EndOffset": 981,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 4
+            },
+            {
+              "Line": 93,
+              "Offset": 1035,
+              "EndOffset": 1040,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 1
+            },
+            {
+              "Line": 93,
+              "Offset": 1035,
+              "EndOffset": 1445,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 3
+            }
+          ]
+        }
+      },
+      "PubDev.UnitTests.API.Services.OrderService/<GetByIdAsync>d__7": {
+        "System.Void PubDev.UnitTests.API.Services.OrderService/<GetByIdAsync>d__7::MoveNext()": {
+          "Lines": {
+            "36": 2,
+            "37": 2,
+            "39": 2,
+            "40": 1,
+            "41": 1,
+            "44": 1,
+            "46": 1,
+            "47": 2
+          },
+          "Branches": [
+            {
+              "Line": 39,
+              "Offset": 164,
+              "EndOffset": 166,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 39,
+              "Offset": 164,
+              "EndOffset": 176,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Services\\ProductService.cs": {
+      "PubDev.UnitTests.API.Services.ProductService": {
+        "System.Void PubDev.UnitTests.API.Services.ProductService::.ctor(PubDev.UnitTests.API.NotificationContext,PubDev.UnitTests.API.Interfaces.Repositories.IProductRepository)": {
+          "Lines": {
+            "13": 8,
+            "14": 8,
+            "15": 8,
+            "16": 8,
+            "17": 8,
+            "18": 8,
+            "19": 8
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Services.ProductService/<CreateAsync>d__5": {
+        "System.Void PubDev.UnitTests.API.Services.ProductService/<CreateAsync>d__5::MoveNext()": {
+          "Lines": {
+            "41": 2,
+            "42": 2,
+            "43": 1,
+            "44": 1,
+            "46": 1,
+            "49": 1,
+            "50": 2
+          },
+          "Branches": [
+            {
+              "Line": 42,
+              "Offset": 41,
+              "EndOffset": 43,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 42,
+              "Offset": 41,
+              "EndOffset": 79,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        }
+      },
+      "PubDev.UnitTests.API.Services.ProductService/<GetAllAsync>d__3": {
+        "System.Void PubDev.UnitTests.API.Services.ProductService/<GetAllAsync>d__3::MoveNext()": {
+          "Lines": {
+            "22": 1,
+            "23": 1,
+            "24": 1
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Services.ProductService/<GetByIdAsync>d__4": {
+        "System.Void PubDev.UnitTests.API.Services.ProductService/<GetByIdAsync>d__4::MoveNext()": {
+          "Lines": {
+            "27": 2,
+            "28": 2,
+            "30": 2,
+            "31": 1,
+            "32": 1,
+            "35": 1,
+            "37": 1,
+            "38": 2
+          },
+          "Branches": [
+            {
+              "Line": 30,
+              "Offset": 164,
+              "EndOffset": 166,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 30,
+              "Offset": 164,
+              "EndOffset": 176,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        }
+      },
+      "PubDev.UnitTests.API.Services.ProductService/<UpdateAsync>d__6": {
+        "System.Void PubDev.UnitTests.API.Services.ProductService/<UpdateAsync>d__6::MoveNext()": {
+          "Lines": {
+            "53": 3,
+            "54": 3,
+            "55": 1,
+            "56": 1,
+            "58": 1,
+            "61": 2,
+            "63": 2,
+            "64": 1,
+            "65": 1,
+            "68": 1,
+            "70": 1,
+            "71": 3
+          },
+          "Branches": [
+            {
+              "Line": 54,
+              "Offset": 52,
+              "EndOffset": 54,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 54,
+              "Offset": 52,
+              "EndOffset": 90,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 63,
+              "Offset": 245,
+              "EndOffset": 250,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 63,
+              "Offset": 245,
+              "EndOffset": 381,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Responses\\ClientGetAllResponse.cs": {
+      "PubDev.UnitTests.API.Responses.ClientGetAllResponse": {
+        "System.Int32 PubDev.UnitTests.API.Responses.ClientGetAllResponse::get_ClientId()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.String PubDev.UnitTests.API.Responses.ClientGetAllResponse::get_Name()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.DateTime PubDev.UnitTests.API.Responses.ClientGetAllResponse::get_CreatedDate()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Responses.ClientGetAllResponse PubDev.UnitTests.API.Responses.ClientGetAllResponse::op_Explicit(PubDev.UnitTests.API.Entities.Client)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Responses\\ClientGetByIdResponse.cs": {
+      "PubDev.UnitTests.API.Responses.ClientGetByIdResponse": {
+        "System.Int32 PubDev.UnitTests.API.Responses.ClientGetByIdResponse::get_ClientId()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.String PubDev.UnitTests.API.Responses.ClientGetByIdResponse::get_Name()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.DateTime PubDev.UnitTests.API.Responses.ClientGetByIdResponse::get_CreatedDate()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Responses.ClientGetByIdResponse PubDev.UnitTests.API.Responses.ClientGetByIdResponse::op_Explicit(PubDev.UnitTests.API.Entities.Client)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Responses\\ClientPatchResponse.cs": {
+      "PubDev.UnitTests.API.Responses.ClientPatchResponse": {
+        "System.Int32 PubDev.UnitTests.API.Responses.ClientPatchResponse::get_ClientId()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.String PubDev.UnitTests.API.Responses.ClientPatchResponse::get_Name()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.DateTime PubDev.UnitTests.API.Responses.ClientPatchResponse::get_CreatedDate()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Responses.ClientPatchResponse PubDev.UnitTests.API.Responses.ClientPatchResponse::op_Explicit(PubDev.UnitTests.API.Entities.Client)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Responses\\ClientResponse.cs": {
+      "PubDev.UnitTests.API.Responses.ClientResponse": {
+        "System.Int32 PubDev.UnitTests.API.Responses.ClientResponse::get_ClientId()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.String PubDev.UnitTests.API.Responses.ClientResponse::get_Name()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Responses.ClientResponse PubDev.UnitTests.API.Responses.ClientResponse::op_Explicit(PubDev.UnitTests.API.Entities.Client)": {
+          "Lines": {
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Responses\\CreateClientResponse.cs": {
+      "PubDev.UnitTests.API.Responses.ClientCreateResponse": {
+        "System.Int32 PubDev.UnitTests.API.Responses.ClientCreateResponse::get_ClientId()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.String PubDev.UnitTests.API.Responses.ClientCreateResponse::get_Name()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.DateTime PubDev.UnitTests.API.Responses.ClientCreateResponse::get_CreatedDate()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Responses.ClientCreateResponse PubDev.UnitTests.API.Responses.ClientCreateResponse::op_Explicit(PubDev.UnitTests.API.Entities.Client)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Responses\\ErrorMessageResponse.cs": {
+      "PubDev.UnitTests.API.Responses.ErrorMessageResponse": {
+        "System.String PubDev.UnitTests.API.Responses.ErrorMessageResponse::get_ErrorCode()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.String PubDev.UnitTests.API.Responses.ErrorMessageResponse::get_Message()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Responses.ErrorMessageResponse PubDev.UnitTests.API.Responses.ErrorMessageResponse::op_Explicit(PubDev.UnitTests.API.ErrorMessage)": {
+          "Lines": {
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Responses\\ErrorResponse.cs": {
+      "PubDev.UnitTests.API.Responses.ErrorResponse": {
+        "System.Nullable`1<System.Guid> PubDev.UnitTests.API.Responses.ErrorResponse::get_Id()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IEnumerable`1<PubDev.UnitTests.API.Responses.ErrorMessageResponse> PubDev.UnitTests.API.Responses.ErrorResponse::get_Messages()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.Void PubDev.UnitTests.API.Responses.ErrorResponse::.ctor(System.Guid,System.Collections.Generic.IEnumerable`1<PubDev.UnitTests.API.Responses.ErrorMessageResponse>)": {
+          "Lines": {
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.Void PubDev.UnitTests.API.Responses.ErrorResponse::.ctor(System.Collections.Generic.IEnumerable`1<PubDev.UnitTests.API.Responses.ErrorMessageResponse>)": {
+          "Lines": {
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Responses\\OrderCreateResponse.cs": {
+      "PubDev.UnitTests.API.Responses.OrderCreateResponse": {
+        "System.Int32 PubDev.UnitTests.API.Responses.OrderCreateResponse::get_OrderId()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Responses.ClientResponse PubDev.UnitTests.API.Responses.OrderCreateResponse::get_Client()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Responses.OrderProductResponse[] PubDev.UnitTests.API.Responses.OrderCreateResponse::get_Items()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.Decimal PubDev.UnitTests.API.Responses.OrderCreateResponse::get_Total()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "System.DateTime PubDev.UnitTests.API.Responses.OrderCreateResponse::get_CreatedDate()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Responses.OrderCreateResponse PubDev.UnitTests.API.Responses.OrderCreateResponse::op_Explicit(PubDev.UnitTests.API.Entities.Order)": {
+          "Lines": {
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Responses\\OrderGetByIdResponse.cs": {
+      "PubDev.UnitTests.API.Responses.OrderGetByIdResponse": {
+        "System.Int32 PubDev.UnitTests.API.Responses.OrderGetByIdResponse::get_OrderId()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Responses.ClientResponse PubDev.UnitTests.API.Responses.OrderGetByIdResponse::get_Client()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Responses.OrderProductResponse[] PubDev.UnitTests.API.Responses.OrderGetByIdResponse::get_Items()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.Decimal PubDev.UnitTests.API.Responses.OrderGetByIdResponse::get_Total()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "System.DateTime PubDev.UnitTests.API.Responses.OrderGetByIdResponse::get_CreatedDate()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Responses.OrderGetByIdResponse PubDev.UnitTests.API.Responses.OrderGetByIdResponse::op_Explicit(PubDev.UnitTests.API.Entities.Order)": {
+          "Lines": {
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Responses\\OrderProductResponse.cs": {
+      "PubDev.UnitTests.API.Responses.OrderProductResponse": {
+        "PubDev.UnitTests.API.Responses.ProductResponse PubDev.UnitTests.API.Responses.OrderProductResponse::get_Product()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 PubDev.UnitTests.API.Responses.OrderProductResponse::get_Quantity()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Decimal PubDev.UnitTests.API.Responses.OrderProductResponse::get_Value()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Responses.OrderProductResponse PubDev.UnitTests.API.Responses.OrderProductResponse::op_Explicit(PubDev.UnitTests.API.Entities.OrderProduct)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Responses\\ProductCreateResponse.cs": {
+      "PubDev.UnitTests.API.Responses.ProductCreateResponse": {
+        "System.Int32 PubDev.UnitTests.API.Responses.ProductCreateResponse::get_ProductId()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.String PubDev.UnitTests.API.Responses.ProductCreateResponse::get_Name()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Decimal PubDev.UnitTests.API.Responses.ProductCreateResponse::get_Value()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.DateTime PubDev.UnitTests.API.Responses.ProductCreateResponse::get_CreatedDate()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Responses.ProductCreateResponse PubDev.UnitTests.API.Responses.ProductCreateResponse::op_Explicit(PubDev.UnitTests.API.Entities.Product)": {
+          "Lines": {
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Responses\\ProductGetAllResponse.cs": {
+      "PubDev.UnitTests.API.Responses.ProductGetAllResponse": {
+        "System.Int32 PubDev.UnitTests.API.Responses.ProductGetAllResponse::get_ProductId()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.String PubDev.UnitTests.API.Responses.ProductGetAllResponse::get_Name()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Decimal PubDev.UnitTests.API.Responses.ProductGetAllResponse::get_Value()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.DateTime PubDev.UnitTests.API.Responses.ProductGetAllResponse::get_CreatedDate()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Responses.ProductGetAllResponse PubDev.UnitTests.API.Responses.ProductGetAllResponse::op_Explicit(PubDev.UnitTests.API.Entities.Product)": {
+          "Lines": {
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Responses\\ProductGetByIdResponse.cs": {
+      "PubDev.UnitTests.API.Responses.ProductGetByIdResponse": {
+        "System.Int32 PubDev.UnitTests.API.Responses.ProductGetByIdResponse::get_ProductId()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.String PubDev.UnitTests.API.Responses.ProductGetByIdResponse::get_Name()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Decimal PubDev.UnitTests.API.Responses.ProductGetByIdResponse::get_Value()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.DateTime PubDev.UnitTests.API.Responses.ProductGetByIdResponse::get_CreatedDate()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Responses.ProductGetByIdResponse PubDev.UnitTests.API.Responses.ProductGetByIdResponse::op_Explicit(PubDev.UnitTests.API.Entities.Product)": {
+          "Lines": {
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Responses\\ProductPatchResponse.cs": {
+      "PubDev.UnitTests.API.Responses.ProductPatchResponse": {
+        "System.Int32 PubDev.UnitTests.API.Responses.ProductPatchResponse::get_ProductId()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.String PubDev.UnitTests.API.Responses.ProductPatchResponse::get_Name()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Decimal PubDev.UnitTests.API.Responses.ProductPatchResponse::get_Value()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.DateTime PubDev.UnitTests.API.Responses.ProductPatchResponse::get_CreatedDate()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Responses.ProductPatchResponse PubDev.UnitTests.API.Responses.ProductPatchResponse::op_Explicit(PubDev.UnitTests.API.Entities.Product)": {
+          "Lines": {
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Responses\\ProductResponse.cs": {
+      "PubDev.UnitTests.API.Responses.ProductResponse": {
+        "System.Int32 PubDev.UnitTests.API.Responses.ProductResponse::get_ProductId()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.String PubDev.UnitTests.API.Responses.ProductResponse::get_Name()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Decimal PubDev.UnitTests.API.Responses.ProductResponse::get_Value()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Responses.ProductResponse PubDev.UnitTests.API.Responses.ProductResponse::op_Explicit(PubDev.UnitTests.API.Entities.Product)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Requests\\ClientCreateRequest.cs": {
+      "PubDev.UnitTests.API.Requests.ClientCreateRequest": {
+        "System.String PubDev.UnitTests.API.Requests.ClientCreateRequest::get_Name()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.String PubDev.UnitTests.API.Requests.ClientCreateRequest::get_Address()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Entities.Client PubDev.UnitTests.API.Requests.ClientCreateRequest::op_Explicit(PubDev.UnitTests.API.Requests.ClientCreateRequest)": {
+          "Lines": {
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Requests\\ClientPatchRequest.cs": {
+      "PubDev.UnitTests.API.Requests.ClientPatchRequest": {
+        "System.String PubDev.UnitTests.API.Requests.ClientPatchRequest::get_Name()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Entities.Client PubDev.UnitTests.API.Requests.ClientPatchRequest::op_Explicit(PubDev.UnitTests.API.Requests.ClientPatchRequest)": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Requests\\OrderCreateRequest.cs": {
+      "PubDev.UnitTests.API.Requests.OrderCreateRequest": {
+        "System.Int32 PubDev.UnitTests.API.Requests.OrderCreateRequest::get_ClientId()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Requests.OrderProductRequest[] PubDev.UnitTests.API.Requests.OrderCreateRequest::get_Products()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Entities.Order PubDev.UnitTests.API.Requests.OrderCreateRequest::op_Explicit(PubDev.UnitTests.API.Requests.OrderCreateRequest)": {
+          "Lines": {
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Requests\\OrderProductRequest.cs": {
+      "PubDev.UnitTests.API.Requests.OrderProductRequest": {
+        "System.Int32 PubDev.UnitTests.API.Requests.OrderProductRequest::get_ProductId()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 PubDev.UnitTests.API.Requests.OrderProductRequest::get_Quantity()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Entities.OrderProduct PubDev.UnitTests.API.Requests.OrderProductRequest::op_Explicit(PubDev.UnitTests.API.Requests.OrderProductRequest)": {
+          "Lines": {
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Requests\\ProductCreateRequest.cs": {
+      "PubDev.UnitTests.API.Requests.ProductCreateRequest": {
+        "System.String PubDev.UnitTests.API.Requests.ProductCreateRequest::get_Name()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.Decimal PubDev.UnitTests.API.Requests.ProductCreateRequest::get_Value()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Entities.Product PubDev.UnitTests.API.Requests.ProductCreateRequest::op_Explicit(PubDev.UnitTests.API.Requests.ProductCreateRequest)": {
+          "Lines": {
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Requests\\ProductPatchRequest.cs": {
+      "PubDev.UnitTests.API.Requests.ProductPatchRequest": {
+        "System.String PubDev.UnitTests.API.Requests.ProductPatchRequest::get_Name()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.Decimal PubDev.UnitTests.API.Requests.ProductPatchRequest::get_Value()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Entities.Product PubDev.UnitTests.API.Requests.ProductPatchRequest::op_Explicit(PubDev.UnitTests.API.Requests.ProductPatchRequest)": {
+          "Lines": {
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Repositories\\ClientRepository.cs": {
+      "PubDev.UnitTests.API.Repositories.ClientRepository": {
+        "System.Void PubDev.UnitTests.API.Repositories.ClientRepository::.ctor(System.Data.IDbConnection)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Repositories.ClientRepository/<CreateAsync>d__4": {
+        "System.Void PubDev.UnitTests.API.Repositories.ClientRepository/<CreateAsync>d__4::MoveNext()": {
+          "Lines": {
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "59": 0,
+            "60": 0
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Repositories.ClientRepository/<GetAllAsync>d__2": {
+        "System.Void PubDev.UnitTests.API.Repositories.ClientRepository/<GetAllAsync>d__2::MoveNext()": {
+          "Lines": {
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "26": 0,
+            "27": 0
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Repositories.ClientRepository/<GetByIdAsync>d__3": {
+        "System.Void PubDev.UnitTests.API.Repositories.ClientRepository/<GetByIdAsync>d__3::MoveNext()": {
+          "Lines": {
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "41": 0,
+            "42": 0
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Repositories.ClientRepository/<UpdateAsync>d__5": {
+        "System.Void PubDev.UnitTests.API.Repositories.ClientRepository/<UpdateAsync>d__5::MoveNext()": {
+          "Lines": {
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "72": 0,
+            "73": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Repositories\\OrderProductRepository.cs": {
+      "PubDev.UnitTests.API.Repositories.OrderProductRepository": {
+        "System.Void PubDev.UnitTests.API.Repositories.OrderProductRepository::.ctor(System.Data.IDbConnection)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Repositories.OrderProductRepository/<>c__DisplayClass2_0": {
+        "<>f__AnonymousType10`3<System.Int32,System.Int32,System.Int32> PubDev.UnitTests.API.Repositories.OrderProductRepository/<>c__DisplayClass2_0::<CreateAsync>b__0(PubDev.UnitTests.API.Entities.OrderProduct)": {
+          "Lines": {
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Repositories.OrderProductRepository/<CreateAsync>d__2": {
+        "System.Void PubDev.UnitTests.API.Repositories.OrderProductRepository/<CreateAsync>d__2::MoveNext()": {
+          "Lines": {
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "28": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Repositories\\OrderRepository.cs": {
+      "PubDev.UnitTests.API.Repositories.OrderRepository": {
+        "System.Void PubDev.UnitTests.API.Repositories.OrderRepository::.ctor(System.Data.IDbConnection)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Repositories.OrderRepository/<>c__DisplayClass2_0": {
+        "PubDev.UnitTests.API.Entities.Order PubDev.UnitTests.API.Repositories.OrderRepository/<>c__DisplayClass2_0::<GetAllAsync>b__0(PubDev.UnitTests.API.Entities.Order,PubDev.UnitTests.API.Entities.Client,PubDev.UnitTests.API.Entities.OrderProduct,PubDev.UnitTests.API.Entities.Product)": {
+          "Lines": {
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "46": 0,
+            "48": 0,
+            "50": 0,
+            "52": 0,
+            "53": 0
+          },
+          "Branches": [
+            {
+              "Line": 39,
+              "Offset": 25,
+              "EndOffset": 27,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 39,
+              "Offset": 25,
+              "EndOffset": 62,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "PubDev.UnitTests.API.Repositories.OrderRepository/<>c__DisplayClass3_0": {
+        "PubDev.UnitTests.API.Entities.Order PubDev.UnitTests.API.Repositories.OrderRepository/<>c__DisplayClass3_0::<GetByIdAsync>b__0(PubDev.UnitTests.API.Entities.Order,PubDev.UnitTests.API.Entities.Client,PubDev.UnitTests.API.Entities.OrderProduct,PubDev.UnitTests.API.Entities.Product)": {
+          "Lines": {
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "91": 0,
+            "93": 0,
+            "95": 0,
+            "97": 0,
+            "98": 0
+          },
+          "Branches": [
+            {
+              "Line": 84,
+              "Offset": 25,
+              "EndOffset": 27,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 84,
+              "Offset": 25,
+              "EndOffset": 62,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "PubDev.UnitTests.API.Repositories.OrderRepository/<CreateAsync>d__4": {
+        "System.Void PubDev.UnitTests.API.Repositories.OrderRepository/<CreateAsync>d__4::MoveNext()": {
+          "Lines": {
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "116": 0,
+            "117": 0,
+            "118": 0,
+            "120": 0,
+            "121": 0
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Repositories.OrderRepository/<GetAllAsync>d__2": {
+        "System.Void PubDev.UnitTests.API.Repositories.OrderRepository/<GetAllAsync>d__2::MoveNext()": {
+          "Lines": {
+            "18": 0,
+            "19": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "45": 0,
+            "47": 0,
+            "49": 0,
+            "51": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Repositories.OrderRepository/<GetByIdAsync>d__3": {
+        "System.Void PubDev.UnitTests.API.Repositories.OrderRepository/<GetByIdAsync>d__3::MoveNext()": {
+          "Lines": {
+            "61": 0,
+            "62": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "90": 0,
+            "92": 0,
+            "94": 0,
+            "96": 0,
+            "100": 0,
+            "101": 0,
+            "102": 0,
+            "103": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Repositories\\ProductRepository.cs": {
+      "PubDev.UnitTests.API.Repositories.ProductRepository": {
+        "System.Void PubDev.UnitTests.API.Repositories.ProductRepository::.ctor(System.Data.IDbConnection)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Repositories.ProductRepository/<CreateAsync>d__4": {
+        "System.Void PubDev.UnitTests.API.Repositories.ProductRepository/<CreateAsync>d__4::MoveNext()": {
+          "Lines": {
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "63": 0,
+            "64": 0
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Repositories.ProductRepository/<GetAllAsync>d__2": {
+        "System.Void PubDev.UnitTests.API.Repositories.ProductRepository/<GetAllAsync>d__2::MoveNext()": {
+          "Lines": {
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "27": 0,
+            "28": 0
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Repositories.ProductRepository/<GetByIdAsync>d__3": {
+        "System.Void PubDev.UnitTests.API.Repositories.ProductRepository/<GetByIdAsync>d__3::MoveNext()": {
+          "Lines": {
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "43": 0,
+            "44": 0
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Repositories.ProductRepository/<UpdateAsync>d__5": {
+        "System.Void PubDev.UnitTests.API.Repositories.ProductRepository/<UpdateAsync>d__5::MoveNext()": {
+          "Lines": {
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "77": 0,
+            "78": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Providers\\PersistenceConfiguration.cs": {
+      "PubDev.UnitTests.API.Providers.PersistenceConfiguration": {
+        "Microsoft.Extensions.DependencyInjection.IServiceCollection PubDev.UnitTests.API.Providers.PersistenceConfiguration::AddPersistence(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)": {
+          "Lines": {
+            "11": 0,
+            "12": 0,
+            "14": 0,
+            "16": 0,
+            "17": 0,
+            "19": 0,
+            "21": 0,
+            "22": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Providers\\RepositoriesConfiguration.cs": {
+      "PubDev.UnitTests.API.Providers.RepositoriesConfiguration": {
+        "Microsoft.Extensions.DependencyInjection.IServiceCollection PubDev.UnitTests.API.Providers.RepositoriesConfiguration::AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "15": 0,
+            "16": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Providers\\ServicesConfiguration.cs": {
+      "PubDev.UnitTests.API.Providers.ServicesConfiguration": {
+        "Microsoft.Extensions.DependencyInjection.IServiceCollection PubDev.UnitTests.API.Providers.ServicesConfiguration::AddServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "14": 0,
+            "15": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Presenters\\Presenter.cs": {
+      "PubDev.UnitTests.API.Presenters.Presenter": {
+        "Microsoft.AspNetCore.Mvc.IActionResult PubDev.UnitTests.API.Presenters.Presenter::GetResult(TResult,System.Func`2<TResult,TResponse>)": {
+          "Lines": {
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "27": 0,
+            "28": 0
+          },
+          "Branches": [
+            {
+              "Line": 22,
+              "Offset": 14,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 22,
+              "Offset": 14,
+              "EndOffset": 37,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "Microsoft.AspNetCore.Mvc.IActionResult PubDev.UnitTests.API.Presenters.Presenter::AcceptedResult(TResult,System.Func`2<TResult,TResponse>,System.Func`2<TResult,System.ValueTuple`3<System.String,System.String,System.Object>>)": {
+          "Lines": {
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "41": 0,
+            "44": 0,
+            "45": 0
+          },
+          "Branches": [
+            {
+              "Line": 37,
+              "Offset": 14,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 37,
+              "Offset": 14,
+              "EndOffset": 68,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "Microsoft.AspNetCore.Mvc.IActionResult PubDev.UnitTests.API.Presenters.Presenter::CreateResult(TResult,System.Func`2<TResult,TResponse>,System.Func`2<TResult,System.ValueTuple`3<System.String,System.String,System.Object>>)": {
+          "Lines": {
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "58": 0,
+            "61": 0,
+            "62": 0
+          },
+          "Branches": [
+            {
+              "Line": 54,
+              "Offset": 14,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 54,
+              "Offset": 14,
+              "EndOffset": 68,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "Microsoft.AspNetCore.Mvc.IActionResult PubDev.UnitTests.API.Presenters.Presenter::GetInvalidObjectResult()": {
+          "Lines": {
+            "65": 0,
+            "66": 0,
+            "68": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "75": 0,
+            "76": 0,
+            "78": 0
+          },
+          "Branches": [
+            {
+              "Line": 70,
+              "Offset": 120,
+              "EndOffset": 122,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 70,
+              "Offset": 120,
+              "EndOffset": 132,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void PubDev.UnitTests.API.Presenters.Presenter::.ctor(PubDev.UnitTests.API.NotificationContext)": {
+          "Lines": {
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Middlewares\\ExceptionMiddleware.cs": {
+      "PubDev.UnitTests.API.Middlewares.ExceptionMiddleware": {
+        "Microsoft.AspNetCore.Builder.IApplicationBuilder PubDev.UnitTests.API.Middlewares.ExceptionMiddleware::UseErrorMiddleware(Microsoft.AspNetCore.Builder.IApplicationBuilder)": {
+          "Lines": {
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "42": 0,
+            "43": 0
+          },
+          "Branches": []
+        },
+        "System.Text.Json.JsonSerializerOptions PubDev.UnitTests.API.Middlewares.ExceptionMiddleware::GetJsonSerializerOptions()": {
+          "Lines": {
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "53": 0,
+            "55": 0,
+            "56": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Entities\\BaseEntity.cs": {
+      "PubDev.UnitTests.API.Entities.BaseEntity": {
+        "System.DateTime PubDev.UnitTests.API.Entities.BaseEntity::get_CreateDate()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Entities\\Client.cs": {
+      "PubDev.UnitTests.API.Entities.Client": {
+        "System.Int32 PubDev.UnitTests.API.Entities.Client::get_ClientId()": {
+          "Lines": {
+            "5": 4
+          },
+          "Branches": []
+        },
+        "System.String PubDev.UnitTests.API.Entities.Client::get_Name()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.Void PubDev.UnitTests.API.Entities.Client::.ctor()": {
+          "Lines": {
+            "7": 14
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Entities\\Order.cs": {
+      "PubDev.UnitTests.API.Entities.Order": {
+        "System.Int32 PubDev.UnitTests.API.Entities.Order::get_OrderId()": {
+          "Lines": {
+            "5": 2
+          },
+          "Branches": []
+        },
+        "System.Int32 PubDev.UnitTests.API.Entities.Order::get_ClientId()": {
+          "Lines": {
+            "6": 17
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Entities.Client PubDev.UnitTests.API.Entities.Order::get_Client()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.ICollection`1<PubDev.UnitTests.API.Entities.OrderProduct> PubDev.UnitTests.API.Entities.Order::get_OrderProducts()": {
+          "Lines": {
+            "8": 45
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Entities\\OrderProduct.cs": {
+      "PubDev.UnitTests.API.Entities.OrderProduct": {
+        "System.Int32 PubDev.UnitTests.API.Entities.OrderProduct::get_OrderProductId()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 PubDev.UnitTests.API.Entities.OrderProduct::get_OrderId()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 PubDev.UnitTests.API.Entities.OrderProduct::get_ProductId()": {
+          "Lines": {
+            "7": 20
+          },
+          "Branches": []
+        },
+        "System.Int32 PubDev.UnitTests.API.Entities.OrderProduct::get_Quantity()": {
+          "Lines": {
+            "8": 10
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Entities.Order PubDev.UnitTests.API.Entities.OrderProduct::get_Order()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Entities.Product PubDev.UnitTests.API.Entities.OrderProduct::get_Product()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Entities\\Product.cs": {
+      "PubDev.UnitTests.API.Entities.Product": {
+        "System.Int32 PubDev.UnitTests.API.Entities.Product::get_ProductId()": {
+          "Lines": {
+            "5": 6
+          },
+          "Branches": []
+        },
+        "System.String PubDev.UnitTests.API.Entities.Product::get_Name()": {
+          "Lines": {
+            "6": 3
+          },
+          "Branches": []
+        },
+        "System.Decimal PubDev.UnitTests.API.Entities.Product::get_Value()": {
+          "Lines": {
+            "7": 10
+          },
+          "Branches": []
+        },
+        "System.Void PubDev.UnitTests.API.Entities.Product::.ctor()": {
+          "Lines": {
+            "8": 12
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Controllers\\ClientController.cs": {
+      "PubDev.UnitTests.API.Controllers.ClientController": {
+        "System.Void PubDev.UnitTests.API.Controllers.ClientController::.ctor(PubDev.UnitTests.API.Interfaces.Presenters.IPresenter,PubDev.UnitTests.API.Interfaces.Services.IClientService)": {
+          "Lines": {
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Controllers.ClientController/<>c": {
+        "PubDev.UnitTests.API.Responses.ClientGetAllResponse[] PubDev.UnitTests.API.Controllers.ClientController/<>c::<GetClientAllAsync>b__3_0(System.Collections.Generic.IEnumerable`1<PubDev.UnitTests.API.Entities.Client>)": {
+          "Lines": {
+            "33": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Responses.ClientGetByIdResponse PubDev.UnitTests.API.Controllers.ClientController/<>c::<GetClientByIdAsync>b__4_0(PubDev.UnitTests.API.Entities.Client)": {
+          "Lines": {
+            "45": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Responses.ClientCreateResponse PubDev.UnitTests.API.Controllers.ClientController/<>c::<CreateClientAsync>b__5_0(PubDev.UnitTests.API.Entities.Client)": {
+          "Lines": {
+            "59": 0
+          },
+          "Branches": []
+        },
+        "System.ValueTuple`3<System.String,System.String,System.Object> PubDev.UnitTests.API.Controllers.ClientController/<>c::<CreateClientAsync>b__5_1(PubDev.UnitTests.API.Entities.Client)": {
+          "Lines": {
+            "60": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Responses.ClientPatchResponse PubDev.UnitTests.API.Controllers.ClientController/<>c::<PatchClientAsync>b__6_0(PubDev.UnitTests.API.Entities.Client)": {
+          "Lines": {
+            "78": 0
+          },
+          "Branches": []
+        },
+        "System.ValueTuple`3<System.String,System.String,System.Object> PubDev.UnitTests.API.Controllers.ClientController/<>c::<PatchClientAsync>b__6_1(PubDev.UnitTests.API.Entities.Client)": {
+          "Lines": {
+            "79": 0
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Controllers.ClientController/<CreateClientAsync>d__5": {
+        "System.Void PubDev.UnitTests.API.Controllers.ClientController/<CreateClientAsync>d__5::MoveNext()": {
+          "Lines": {
+            "52": 0,
+            "53": 0,
+            "55": 0,
+            "57": 0,
+            "58": 0,
+            "62": 0
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Controllers.ClientController/<GetClientAllAsync>d__3": {
+        "System.Void PubDev.UnitTests.API.Controllers.ClientController/<GetClientAllAsync>d__3::MoveNext()": {
+          "Lines": {
+            "30": 0,
+            "31": 0,
+            "34": 0
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Controllers.ClientController/<GetClientByIdAsync>d__4": {
+        "System.Void PubDev.UnitTests.API.Controllers.ClientController/<GetClientByIdAsync>d__4::MoveNext()": {
+          "Lines": {
+            "42": 0,
+            "43": 0,
+            "46": 0
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Controllers.ClientController/<PatchClientAsync>d__6": {
+        "System.Void PubDev.UnitTests.API.Controllers.ClientController/<PatchClientAsync>d__6::MoveNext()": {
+          "Lines": {
+            "69": 0,
+            "70": 0,
+            "72": 0,
+            "74": 0,
+            "76": 0,
+            "77": 0,
+            "80": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Controllers\\OrderController.cs": {
+      "PubDev.UnitTests.API.Controllers.OrderController": {
+        "System.Void PubDev.UnitTests.API.Controllers.OrderController::.ctor(PubDev.UnitTests.API.Interfaces.Presenters.IPresenter,PubDev.UnitTests.API.Interfaces.Services.IOrderService)": {
+          "Lines": {
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Controllers.OrderController/<>c": {
+        "PubDev.UnitTests.API.Responses.OrderGetByIdResponse[] PubDev.UnitTests.API.Controllers.OrderController/<>c::<GetOrderAllAsync>b__3_0(System.Collections.Generic.IEnumerable`1<PubDev.UnitTests.API.Entities.Order>)": {
+          "Lines": {
+            "33": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Responses.OrderGetByIdResponse PubDev.UnitTests.API.Controllers.OrderController/<>c::<GetOrderByIdAsync>b__4_0(PubDev.UnitTests.API.Entities.Order)": {
+          "Lines": {
+            "45": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Responses.OrderCreateResponse PubDev.UnitTests.API.Controllers.OrderController/<>c::<CreateOrderAsync>b__5_0(PubDev.UnitTests.API.Entities.Order)": {
+          "Lines": {
+            "59": 0
+          },
+          "Branches": []
+        },
+        "System.ValueTuple`3<System.String,System.String,System.Object> PubDev.UnitTests.API.Controllers.OrderController/<>c::<CreateOrderAsync>b__5_1(PubDev.UnitTests.API.Entities.Order)": {
+          "Lines": {
+            "60": 0
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Controllers.OrderController/<CreateOrderAsync>d__5": {
+        "System.Void PubDev.UnitTests.API.Controllers.OrderController/<CreateOrderAsync>d__5::MoveNext()": {
+          "Lines": {
+            "52": 0,
+            "53": 0,
+            "55": 0,
+            "57": 0,
+            "58": 0,
+            "61": 0
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Controllers.OrderController/<GetOrderAllAsync>d__3": {
+        "System.Void PubDev.UnitTests.API.Controllers.OrderController/<GetOrderAllAsync>d__3::MoveNext()": {
+          "Lines": {
+            "30": 0,
+            "31": 0,
+            "34": 0
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Controllers.OrderController/<GetOrderByIdAsync>d__4": {
+        "System.Void PubDev.UnitTests.API.Controllers.OrderController/<GetOrderByIdAsync>d__4::MoveNext()": {
+          "Lines": {
+            "42": 0,
+            "43": 0,
+            "46": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Controllers\\ProductController.cs": {
+      "PubDev.UnitTests.API.Controllers.ProductController": {
+        "System.Void PubDev.UnitTests.API.Controllers.ProductController::.ctor(PubDev.UnitTests.API.Interfaces.Presenters.IPresenter,PubDev.UnitTests.API.Interfaces.Services.IProductService)": {
+          "Lines": {
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Controllers.ProductController/<>c": {
+        "PubDev.UnitTests.API.Responses.ProductGetAllResponse[] PubDev.UnitTests.API.Controllers.ProductController/<>c::<GetProductAllAsync>b__3_0(System.Collections.Generic.IEnumerable`1<PubDev.UnitTests.API.Entities.Product>)": {
+          "Lines": {
+            "33": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Responses.ProductGetByIdResponse PubDev.UnitTests.API.Controllers.ProductController/<>c::<GetProductByIdAsync>b__4_0(PubDev.UnitTests.API.Entities.Product)": {
+          "Lines": {
+            "44": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Responses.ProductCreateResponse PubDev.UnitTests.API.Controllers.ProductController/<>c::<CreateProductAsync>b__5_0(PubDev.UnitTests.API.Entities.Product)": {
+          "Lines": {
+            "58": 0
+          },
+          "Branches": []
+        },
+        "System.ValueTuple`3<System.String,System.String,System.Object> PubDev.UnitTests.API.Controllers.ProductController/<>c::<CreateProductAsync>b__5_1(PubDev.UnitTests.API.Entities.Product)": {
+          "Lines": {
+            "59": 0
+          },
+          "Branches": []
+        },
+        "PubDev.UnitTests.API.Responses.ProductPatchResponse PubDev.UnitTests.API.Controllers.ProductController/<>c::<PatchProductAsync>b__6_0(PubDev.UnitTests.API.Entities.Product)": {
+          "Lines": {
+            "76": 0
+          },
+          "Branches": []
+        },
+        "System.ValueTuple`3<System.String,System.String,System.Object> PubDev.UnitTests.API.Controllers.ProductController/<>c::<PatchProductAsync>b__6_1(PubDev.UnitTests.API.Entities.Product)": {
+          "Lines": {
+            "77": 0
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Controllers.ProductController/<CreateProductAsync>d__5": {
+        "System.Void PubDev.UnitTests.API.Controllers.ProductController/<CreateProductAsync>d__5::MoveNext()": {
+          "Lines": {
+            "51": 0,
+            "52": 0,
+            "54": 0,
+            "56": 0,
+            "57": 0,
+            "60": 0
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Controllers.ProductController/<GetProductAllAsync>d__3": {
+        "System.Void PubDev.UnitTests.API.Controllers.ProductController/<GetProductAllAsync>d__3::MoveNext()": {
+          "Lines": {
+            "30": 0,
+            "31": 0,
+            "34": 0
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Controllers.ProductController/<GetProductByIdAsync>d__4": {
+        "System.Void PubDev.UnitTests.API.Controllers.ProductController/<GetProductByIdAsync>d__4::MoveNext()": {
+          "Lines": {
+            "41": 0,
+            "42": 0,
+            "45": 0
+          },
+          "Branches": []
+        }
+      },
+      "PubDev.UnitTests.API.Controllers.ProductController/<PatchProductAsync>d__6": {
+        "System.Void PubDev.UnitTests.API.Controllers.ProductController/<PatchProductAsync>d__6::MoveNext()": {
+          "Lines": {
+            "67": 0,
+            "68": 0,
+            "70": 0,
+            "72": 0,
+            "74": 0,
+            "75": 0,
+            "78": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Configuration\\PubDevDbContext.cs": {
+      "PubDev.UnitTests.API.Configuration.PubDevDbContext": {
+        "System.Void PubDev.UnitTests.API.Configuration.PubDevDbContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0
+          },
+          "Branches": []
+        },
+        "System.Void PubDev.UnitTests.API.Configuration.PubDevDbContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<PubDev.UnitTests.API.Configuration.PubDevDbContext>)": {
+          "Lines": {
+            "7": 0,
+            "8": 0,
+            "9": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Configuration\\Tables\\ClientConfiguration.cs": {
+      "PubDev.UnitTests.API.Configuration.Tables.ClientConfiguration": {
+        "System.Void PubDev.UnitTests.API.Configuration.Tables.ClientConfiguration::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<PubDev.UnitTests.API.Entities.Client>)": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Configuration\\Tables\\OrderConfiguration.cs": {
+      "PubDev.UnitTests.API.Configuration.Tables.OrderConfiguration": {
+        "System.Void PubDev.UnitTests.API.Configuration.Tables.OrderConfiguration::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<PubDev.UnitTests.API.Entities.Order>)": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Configuration\\Tables\\OrderProductConfiguration.cs": {
+      "PubDev.UnitTests.API.Configuration.Tables.OrderProductConfiguration": {
+        "System.Void PubDev.UnitTests.API.Configuration.Tables.OrderProductConfiguration::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<PubDev.UnitTests.API.Entities.OrderProduct>)": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Configuration\\Tables\\ProductConfiguration.cs": {
+      "PubDev.UnitTests.API.Configuration.Tables.ProductConfiguration": {
+        "System.Void PubDev.UnitTests.API.Configuration.Tables.ProductConfiguration::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<PubDev.UnitTests.API.Entities.Product>)": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Configuration\\Migrations\\20220308070017_Initial.cs": {
+      "PubDev.UnitTests.API.Configuration.Migrations.Initial": {
+        "System.Void PubDev.UnitTests.API.Configuration.Migrations.Initial::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)": {
+          "Lines": {
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "100": 0,
+            "101": 0,
+            "102": 0,
+            "103": 0,
+            "104": 0
+          },
+          "Branches": []
+        },
+        "System.Void PubDev.UnitTests.API.Configuration.Migrations.Initial::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)": {
+          "Lines": {
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "111": 0,
+            "112": 0,
+            "114": 0,
+            "115": 0,
+            "117": 0,
+            "118": 0,
+            "119": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Configuration\\Migrations\\20220308070017_Initial.Designer.cs": {
+      "PubDev.UnitTests.API.Configuration.Migrations.Initial": {
+        "System.Void PubDev.UnitTests.API.Configuration.Migrations.Initial::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "19": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "25": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "99": 0,
+            "100": 0,
+            "101": 0,
+            "102": 0,
+            "103": 0,
+            "104": 0,
+            "105": 0,
+            "106": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "116": 0,
+            "117": 0,
+            "118": 0,
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "129": 0,
+            "130": 0,
+            "131": 0,
+            "132": 0,
+            "133": 0,
+            "135": 0,
+            "136": 0,
+            "137": 0,
+            "138": 0,
+            "139": 0,
+            "140": 0,
+            "141": 0,
+            "142": 0,
+            "143": 0,
+            "144": 0,
+            "145": 0,
+            "147": 0,
+            "148": 0,
+            "149": 0,
+            "150": 0,
+            "151": 0,
+            "152": 0,
+            "153": 0,
+            "154": 0,
+            "155": 0,
+            "156": 0,
+            "157": 0,
+            "158": 0,
+            "159": 0,
+            "160": 0,
+            "161": 0,
+            "162": 0,
+            "163": 0,
+            "164": 0,
+            "165": 0,
+            "166": 0,
+            "168": 0,
+            "169": 0,
+            "170": 0,
+            "171": 0,
+            "173": 0,
+            "174": 0,
+            "175": 0,
+            "176": 0,
+            "178": 0,
+            "179": 0,
+            "180": 0,
+            "181": 0,
+            "183": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Personal\\PubDev\\Lesson-DotNet-UnitTest\\src\\PubDev.UnitTests.API\\Configuration\\Migrations\\PubDevDbContextModelSnapshot.cs": {
+      "PubDev.UnitTests.API.Configuration.Migrations.PubDevDbContextModelSnapshot": {
+        "System.Void PubDev.UnitTests.API.Configuration.Migrations.PubDevDbContextModelSnapshot::BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "17": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "23": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "99": 0,
+            "100": 0,
+            "101": 0,
+            "102": 0,
+            "103": 0,
+            "104": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "116": 0,
+            "117": 0,
+            "118": 0,
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "129": 0,
+            "130": 0,
+            "131": 0,
+            "133": 0,
+            "134": 0,
+            "135": 0,
+            "136": 0,
+            "137": 0,
+            "138": 0,
+            "139": 0,
+            "140": 0,
+            "141": 0,
+            "142": 0,
+            "143": 0,
+            "145": 0,
+            "146": 0,
+            "147": 0,
+            "148": 0,
+            "149": 0,
+            "150": 0,
+            "151": 0,
+            "152": 0,
+            "153": 0,
+            "154": 0,
+            "155": 0,
+            "156": 0,
+            "157": 0,
+            "158": 0,
+            "159": 0,
+            "160": 0,
+            "161": 0,
+            "162": 0,
+            "163": 0,
+            "164": 0,
+            "166": 0,
+            "167": 0,
+            "168": 0,
+            "169": 0,
+            "171": 0,
+            "172": 0,
+            "173": 0,
+            "174": 0,
+            "176": 0,
+            "177": 0,
+            "178": 0,
+            "179": 0,
+            "181": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
