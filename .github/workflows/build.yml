@@ -69,4 +69,4 @@ jobs:
           ./.sonar/scanner/dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
 
       - name: Run Mutations
-        run: dotnet stryker -tp "tests/API.Tests/PubDev.Store.API.Tests.csproj" --with-baseline:$GITHUB_BASE_REF --dashboard-api-key ${{ secrets.STRYKER_API_KEY }} --version $GITHUB_HEAD_REF
+        run: dotnet stryker -tp "tests/API.Tests/PubDev.Store.API.Tests.csproj" --with-baseline:${{ github.base.ref }} --dashboard-api-key ${{ secrets.STRYKER_API_KEY }} --version ${{ github.head.ref }}
