@@ -1,0 +1,9 @@
+﻿global using Moq;
+global using PubDev.Store.API.Entities;
+global using PubDev.Store.API.Enums;
+global using PubDev.Store.API.Interfaces.Repositories;
+global using PubDev.Store.API.Messages;
+global using PubDev.Store.API.Services;
+global using System.Collections.Generic;
+global using System.Threading.Tasks;
+global using Xunit;
