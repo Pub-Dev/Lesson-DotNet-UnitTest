@@ -10,7 +10,7 @@
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Pub-Dev_Lesson-DotNet-UnitTest&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=Pub-Dev_Lesson-DotNet-UnitTest)
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=Pub-Dev_Lesson-DotNet-UnitTest&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=Pub-Dev_Lesson-DotNet-UnitTest)
 
-## Pub Dev Unit Tests 📚🕹
+## Pub Dev Store 📚🕹
 
 this read-me still under development, We had time to develop the whole solution but not to create a good read-me 😜
 
@@ -42,7 +42,6 @@ Add-Migration [MigrationName] -OutputDir Configuration\Migrations
 <!-- ROADMAP -->
 ## Roadmap
 
-- Create git actions to build and test
 - Ran out of Ideas 🤣, feel free to add one
 
 See the [open issues](https://github.com/Pub-Dev/Lesson-DotNet-UnitTest/issues) for a full list of proposed features (and known issues).
