@@ -3,7 +3,13 @@
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
+		<SonarQubeTestProject>False</SonarQubeTestProject>
+		<CodeAnalysisRuleSet>..\..\.sonarlint\pub-dev_lesson-dotnet-unittestcsharp.ruleset</CodeAnalysisRuleSet>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <AdditionalFiles Include="..\..\.sonarlint\pub-dev_lesson-dotnet-unittest\CSharp\SonarLint.xml" Link="SonarLint.xml" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Dapper" Version="2.0.123" />

@@ -1,0 +1,15 @@
+{
+  "ServerUri": "https://sonarcloud.io/",
+  "Organization": {
+    "Key": "pub-dev",
+    "Name": "Pub Dev"
+  },
+  "ProjectKey": "Pub-Dev_Lesson-DotNet-UnitTest",
+  "ProjectName": "Lesson-DotNet-UnitTest",
+  "Profiles": {
+    "CSharp": {
+      "ProfileKey": "AX9n6UwHkbD4S9h3XhAw",
+      "ProfileTimestamp": "2021-11-22T10:44:23Z"
+    }
+  }
+}

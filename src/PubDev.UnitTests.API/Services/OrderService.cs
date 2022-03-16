@@ -1,7 +1,7 @@
 ﻿using PubDev.UnitTests.API.Entities;
-using PubDev.UnitTests.API.Enums;
 using PubDev.UnitTests.API.Interfaces.Repositories;
 using PubDev.UnitTests.API.Interfaces.Services;
+using PubDev.UnitTests.API.Messages;
 
 namespace PubDev.UnitTests.API.Services;
 
@@ -41,7 +41,7 @@ public class OrderService : IOrderService
             return order;
         }
 
-        _notificationContext.AddNotification("ORDER_NOT_FOUND", $"Order {orderId} not found", ErrorType.NotFound);
+        _notificationContext.AddNotFound(Error.Order.NOT_FOUND, $"Order {orderId} not found");
 
         return null;
     }
@@ -52,14 +52,14 @@ public class OrderService : IOrderService
 
         if (client is null)
         {
-            _notificationContext.AddNotification("CLIENT_NOT_FOUND", $"Client {order.ClientId} not found", ErrorType.Validation);
+            _notificationContext.AddValidationError(Error.Client.NOT_FOUND, $"Client {order.ClientId} not found");
 
             return null;
         }
 
         if (order.OrderProducts is null || order.OrderProducts.Count == 0)
         {
-            _notificationContext.AddNotification("ORDER_EMPTY", $"Order should have at least one product", ErrorType.Validation);
+            _notificationContext.AddValidationError(Error.Order.EMPTY, $"Order should have at least one product");
 
             return null;
         }
@@ -68,7 +68,7 @@ public class OrderService : IOrderService
 
         if (productDisctinct.Count() < order.OrderProducts.Count)
         {
-            _notificationContext.AddNotification("ORDER_PRODUCT_REPEATED", $"Order should have a list of distict products", ErrorType.Validation);
+            _notificationContext.AddValidationError(Error.Order.PRODUCT_REPEATED, $"Order should have a list of distict products");
 
             return null;
         }
@@ -79,14 +79,14 @@ public class OrderService : IOrderService
 
             if (productData is null)
             {
-                _notificationContext.AddNotification("PRODUCT_NOT_FOUND", $"Product {product.ProductId} not found", ErrorType.Validation);
+                _notificationContext.AddValidationError(Error.Product.NOT_FOUND, $"Product {product.ProductId} not found");
             }
 
             if (product.Quantity <= 0)
             {
                 _notificationContext
-                    .AddNotification("ORDER_PRODUCT_QUANTITY_ZERO", $"Product {product.ProductId} should have the {nameof(product.Quantity)} greater than 0",
-                    ErrorType.Validation);
+                    .AddValidationError(Error.Order.PRODUCT_QUANTITY_ZERO, 
+                        $"Product {product.ProductId} should have the {nameof(product.Quantity)} greater than 0");
             }
         }
 
