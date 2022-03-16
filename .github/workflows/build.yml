@@ -22,7 +22,7 @@ jobs:
           script: |
             const { issue: { number: issue_number }, repo: { owner, repo }  } = context;
             
-            const message = 'oi';
+            const message = '🚀 **Stryker report generated** 🚀';
 
             github.issues.createComment({ 
               issue_number, 
