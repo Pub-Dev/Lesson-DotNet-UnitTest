@@ -19,6 +19,12 @@ jobs:
         with:
           dotnet-version: 6.0.x
           
+      - name: DotNet tools manifest
+        run: dotnet new tool-manifest
+      
+      - name: Install Stryker
+        run: dotnet tool install dotnet-stryker
+
       - name: Restore DotNet Tools
         run: dotnet tool restore
           
