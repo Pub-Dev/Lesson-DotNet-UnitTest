@@ -1,7 +1,7 @@
 ﻿using PubDev.UnitTests.API.Entities;
-using PubDev.UnitTests.API.Enums;
 using PubDev.UnitTests.API.Interfaces.Repositories;
 using PubDev.UnitTests.API.Interfaces.Services;
+using PubDev.UnitTests.API.Messages;
 
 namespace PubDev.UnitTests.API.Services;
 
@@ -32,7 +32,7 @@ public class ClientService : IClientService
             return client;
         }
 
-        _notificationContext.AddNotification("CLIENT_NOT_FOUND", $"Client {clientId} not found", ErrorType.NotFound);
+        _notificationContext.AddNotFound(Error.Client.NOT_FOUND, $"Client {clientId} not found");
 
         return null;
     }
@@ -51,7 +51,7 @@ public class ClientService : IClientService
             return await _clientRepository.UpdateAsync(client);
         }
 
-        _notificationContext.AddNotification("CLIENT_NOT_FOUND", $"Client {client.ClientId} not found", ErrorType.Validation);
+        _notificationContext.AddNotFound(Error.Client.NOT_FOUND, $"Client {client.ClientId} not found");
 
         return null;
     }

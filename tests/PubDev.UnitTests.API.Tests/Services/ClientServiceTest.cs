@@ -1,22 +1,13 @@
-﻿using Moq;
-using PubDev.UnitTests.API.Entities;
-using PubDev.UnitTests.API.Enums;
-using PubDev.UnitTests.API.Interfaces.Repositories;
-using PubDev.UnitTests.API.Services;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Xunit;
-
-namespace PubDev.UnitTests.API.Tests.Services;
+﻿namespace PubDev.UnitTests.API.Tests.Services;
 
 public class ClientServiceTest
 {
-    private readonly NotificationContext _notificationContext = new NotificationContext();
-    private readonly Mock<IClientRepository> _mockClientRepository = new Mock<IClientRepository>();
+    private readonly NotificationContext _notificationContext = new();
+    private readonly Mock<IClientRepository> _mockClientRepository = new();
 
     private ClientService GetClientService()
     {
-        return new ClientService(
+        return new(
             _notificationContext,
             _mockClientRepository.Object);
     }
@@ -24,7 +15,7 @@ public class ClientServiceTest
     [Fact]
     public async Task CreateAsync_WithValidData_ReturnsClient()
     {
-        // prepare
+        // arrange
         _mockClientRepository
             .Setup(x => x.CreateAsync(It.IsAny<Client>()))
             .ReturnsAsync(new Client());
@@ -32,7 +23,7 @@ public class ClientServiceTest
         var service = GetClientService();
 
         // act
-        var data = await service.CreateAsync(new Client());
+        var data = await service.CreateAsync(new());
 
         // assert
         Assert.NotNull(data);
@@ -42,7 +33,7 @@ public class ClientServiceTest
     [Fact]
     public async Task GetAllAsync_WithValidData_ReturnClient()
     {
-        // prepare
+        // arrange
         _mockClientRepository
             .Setup(x => x.GetAllAsync())
             .ReturnsAsync(new List<Client>());
@@ -60,7 +51,7 @@ public class ClientServiceTest
     [Fact]
     public async Task GetByIdAsync_WithClientThatDoesNotExist_ReturnsNull()
     {
-        // prepare
+        // arrange
         _mockClientRepository
             .Setup(x => x.GetByIdAsync(It.IsAny<int>()))
             .ReturnsAsync(default(Client));
@@ -72,18 +63,18 @@ public class ClientServiceTest
 
         // assert
         Assert.Null(data);
-        _mockClientRepository.Verify(x => x.GetByIdAsync(It.IsAny<int>()), Times.Once);
         Assert.False(_notificationContext.IsValid);
         Assert.Contains(_notificationContext.ErrorMessages,
-            x => x.ErrorCode == "CLIENT_NOT_FOUND" &&
+            x => x.ErrorCode == Error.Client.NOT_FOUND &&
                 x.Message == $"Client 1 not found" &&
                 x.ErrorType == ErrorType.NotFound);
+        _mockClientRepository.Verify(x => x.GetByIdAsync(It.IsAny<int>()), Times.Once);
     }
 
     [Fact]
     public async Task GetByIdAsync_WithClientThatExists_ReturnsClient()
     {
-        // prepare
+        // arrange
         _mockClientRepository
             .Setup(x => x.GetByIdAsync(It.IsAny<int>()))
             .ReturnsAsync(new Client());
@@ -95,39 +86,42 @@ public class ClientServiceTest
 
         // assert
         Assert.NotNull(data);
-        _mockClientRepository.Verify(x => x.GetByIdAsync(It.IsAny<int>()), Times.Once);
         Assert.True(_notificationContext.IsValid);
+        _mockClientRepository.Verify(x => x.GetByIdAsync(It.IsAny<int>()), Times.Once);
     }
 
     [Fact]
     public async Task UpdateAsync_WithClientThatDoesNotExist_ReturnsNull()
     {
-        // prepare
+        // arrange
         _mockClientRepository
             .Setup(x => x.GetByIdAsync(It.IsAny<int>()))
             .ReturnsAsync(default(Client));
 
         var service = GetClientService();
-        var client = new Client() { ClientId = 1 };
+
+        var client = new Client()
+        {
+            ClientId = 1
+        };
 
         // act
         var data = await service.UpdateAsync(client);
 
         // assert
         Assert.Null(data);
+        Assert.Contains(_notificationContext.ErrorMessages,
+            x => x.ErrorCode == Error.Client.NOT_FOUND &&
+                x.Message == $"Client 1 not found" &&
+                x.ErrorType == ErrorType.NotFound);
         _mockClientRepository.Verify(x => x.GetByIdAsync(It.IsAny<int>()), Times.Once);
         _mockClientRepository.Verify(x => x.UpdateAsync(It.IsAny<Client>()), Times.Never);
-        Assert.False(_notificationContext.IsValid);
-        Assert.Contains(_notificationContext.ErrorMessages,
-            x => x.ErrorCode == "CLIENT_NOT_FOUND" &&
-                x.Message == $"Client 1 not found" &&
-                x.ErrorType == ErrorType.Validation);
     }
 
     [Fact]
     public async Task UpdateAsync_WithClientThatExists_ReturnsClient()
     {
-        // prepare
+        // arrange
         _mockClientRepository
             .Setup(x => x.GetByIdAsync(It.IsAny<int>()))
             .ReturnsAsync(new Client());
@@ -137,6 +131,7 @@ public class ClientServiceTest
             .ReturnsAsync(new Client());
 
         var service = GetClientService();
+
         var client = new Client();
 
         // act
@@ -144,8 +139,8 @@ public class ClientServiceTest
 
         // assert
         Assert.NotNull(data);
+        Assert.True(_notificationContext.IsValid);
         _mockClientRepository.Verify(x => x.GetByIdAsync(It.IsAny<int>()), Times.Once);
         _mockClientRepository.Verify(x => x.UpdateAsync(It.IsAny<Client>()), Times.Once);
-        Assert.True(_notificationContext.IsValid);
     }
 }

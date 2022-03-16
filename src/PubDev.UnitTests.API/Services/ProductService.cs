@@ -1,7 +1,7 @@
 ﻿using PubDev.UnitTests.API.Entities;
-using PubDev.UnitTests.API.Enums;
 using PubDev.UnitTests.API.Interfaces.Repositories;
 using PubDev.UnitTests.API.Interfaces.Services;
+using PubDev.UnitTests.API.Messages;
 
 namespace PubDev.UnitTests.API.Services;
 
@@ -32,7 +32,7 @@ public class ProductService : IProductService
             return product;
         }
 
-        _notificationContext.AddNotification("PRODUCT_NOT_FOUND", $"Product {productId} not found", ErrorType.NotFound);
+        _notificationContext.AddNotFound(Error.Product.NOT_FOUND, $"Product {productId} not found");
 
         return null;
     }
@@ -41,7 +41,7 @@ public class ProductService : IProductService
     {
         if (product.Value <= 0)
         {
-            _notificationContext.AddNotification("PRODUCT_VALUE_INVALID", "Product value should be greater than 0", ErrorType.Validation);
+            _notificationContext.AddValidationError(Error.Product.INVALID_VALUE, "Product value should be greater than 0");
 
             return null;
         }
@@ -53,7 +53,7 @@ public class ProductService : IProductService
     {
         if (product.Value <= 0)
         {
-            _notificationContext.AddNotification("PRODUCT_VALUE_INVALID", "Product value should be greater than 0", ErrorType.Validation);
+            _notificationContext.AddValidationError(Error.Product.INVALID_VALUE, "Product value should be greater than 0");
 
             return null;
         }
@@ -65,7 +65,7 @@ public class ProductService : IProductService
             return await _productRepository.UpdateAsync(product);
         }
 
-        _notificationContext.AddNotification("PRODUCT_NOT_FOUND", $"Product {product.ProductId} not found", ErrorType.Validation);
+        _notificationContext.AddValidationError(Error.Product.NOT_FOUND, $"Product {product.ProductId} not found");
 
         return null;
     }

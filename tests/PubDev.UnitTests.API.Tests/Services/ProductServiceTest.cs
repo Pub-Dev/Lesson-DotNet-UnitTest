@@ -1,18 +1,9 @@
-﻿using Moq;
-using PubDev.UnitTests.API.Entities;
-using PubDev.UnitTests.API.Enums;
-using PubDev.UnitTests.API.Interfaces.Repositories;
-using PubDev.UnitTests.API.Services;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Xunit;
-
-namespace PubDev.UnitTests.API.Tests.Services;
+﻿namespace PubDev.UnitTests.API.Tests.Services;
 
 public class ProductServiceTest
 {
-    private readonly NotificationContext _notificationContext = new NotificationContext();
-    private readonly Mock<IProductRepository> _mockProductRepository = new Mock<IProductRepository>();
+    private readonly NotificationContext _notificationContext = new();
+    private readonly Mock<IProductRepository> _mockProductRepository = new();
 
     private ProductService GetProductService()
     {
@@ -52,7 +43,12 @@ public class ProductServiceTest
             .Setup(x => x.CreateAsync(It.IsAny<Product>()))
             .ReturnsAsync(new Product());
 
-        var product = new Product() { Name = "Product", Value = -10 };
+        var product = new Product()
+        {
+            Name = "Product",
+            Value = -10
+        };
+
         var service = GetProductService();
 
         // act
@@ -62,7 +58,7 @@ public class ProductServiceTest
         Assert.Null(data);
         Assert.False(_notificationContext.IsValid);
         Assert.Contains(_notificationContext.ErrorMessages,
-            x => x.ErrorCode == "PRODUCT_VALUE_INVALID" &&
+            x => x.ErrorCode == Error.Product.INVALID_VALUE &&
                 x.Message == "Product value should be greater than 0" &&
                 x.ErrorType == ErrorType.Validation);
         _mockProductRepository.Verify(x => x.CreateAsync(It.IsAny<Product>()), Times.Never);
@@ -136,7 +132,12 @@ public class ProductServiceTest
             .ReturnsAsync(default(Product));
 
         var service = GetProductService();
-        var product = new Product() { ProductId = 1, Value = 10 };
+
+        var product = new Product()
+        {
+            ProductId = 1,
+            Value = 10
+        };
 
         // act
         var data = await service.UpdateAsync(product);
@@ -161,6 +162,7 @@ public class ProductServiceTest
             .ReturnsAsync(default(Product));
 
         var service = GetProductService();
+
         var product = new Product()
         {
             ProductId = 1,
@@ -176,7 +178,7 @@ public class ProductServiceTest
         _mockProductRepository.Verify(x => x.UpdateAsync(It.IsAny<Product>()), Times.Never);
         Assert.False(_notificationContext.IsValid);
         Assert.Contains(_notificationContext.ErrorMessages,
-            x => x.ErrorCode == "PRODUCT_VALUE_INVALID" &&
+            x => x.ErrorCode == Error.Product.INVALID_VALUE &&
                 x.Message == $"Product value should be greater than 0" &&
                 x.ErrorType == ErrorType.Validation);
     }
@@ -194,6 +196,7 @@ public class ProductServiceTest
             .ReturnsAsync(new Product());
 
         var service = GetProductService();
+
         var product = new Product()
         {
             ProductId = 10,

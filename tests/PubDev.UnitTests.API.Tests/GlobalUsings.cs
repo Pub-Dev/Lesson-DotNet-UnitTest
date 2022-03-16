@@ -1,0 +1,9 @@
+﻿global using Moq;
+global using PubDev.UnitTests.API.Entities;
+global using PubDev.UnitTests.API.Enums;
+global using PubDev.UnitTests.API.Interfaces.Repositories;
+global using PubDev.UnitTests.API.Messages;
+global using PubDev.UnitTests.API.Services;
+global using System.Collections.Generic;
+global using System.Threading.Tasks;
+global using Xunit;
