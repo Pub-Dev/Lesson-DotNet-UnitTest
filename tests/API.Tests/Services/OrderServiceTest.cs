@@ -339,7 +339,7 @@ public class OrderServiceTest
         Assert.False(_notificationContext.IsValid);
         Assert.Contains(_notificationContext.ErrorMessages,
            x => x.ErrorCode == Error.Product.NOT_FOUND &&
-               x.Message == "Product 1 not found" &&
+               x.Message == $"Product 1 not found" &&
                x.ErrorType == ErrorType.Validation);
         Assert.Contains(_notificationContext.ErrorMessages,
            x => x.ErrorCode == Error.Order.PRODUCT_QUANTITY_ZERO &&

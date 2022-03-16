@@ -2,7 +2,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![Mutation testing badge](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2FPub-Dev%2FLesson-Flutter-UnitTest%2Fmain)](https://dashboard.stryker-mutator.io/reports/github.com/Pub-Dev/Lesson-Flutter-UnitTest/main)
+[![Mutation testing badge](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2FPub-Dev%2FLesson-DotNet-UnitTest%2Fmain)](https://dashboard.stryker-mutator.io/reports/github.com/Pub-Dev/Lesson-DotNet-UnitTest/main)
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Pub-Dev_Lesson-DotNet-UnitTest&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Pub-Dev_Lesson-DotNet-UnitTest)
 [![Build and Test](https://github.com/Pub-Dev/Lesson-DotNet-UnitTest/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/Pub-Dev/Lesson-DotNet-UnitTest/actions/workflows/build.yml)
@@ -16,11 +16,13 @@
 this read-me still under development, We had time to develop the whole solution but not to create a good read-me 😜
 
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 Here's why:
-* .NET 6.0 is the most advanced and fast framework to develop applications using C#
-* It's fun! 🚀🎉
+
+- .NET 6.0 is the most advanced and fast framework to develop applications using C#
+- It's fun! 🚀🎉
 
 ## Executing
 
@@ -43,6 +45,7 @@ dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
 [WIP]
 
 <!-- ROADMAP -->
+
 ## Roadmap
 
 - Ran out of Ideas 🤣, feel free to add one
@@ -50,6 +53,7 @@ dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
 See the [open issues](https://github.com/Pub-Dev/Lesson-DotNet-UnitTest/issues) for a full list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -64,6 +68,7 @@ Don't forget to give the project a star! Thanks again!
 5. Open a Pull Request
 
 <!-- CONTACT -->
+
 ## Contact
 
 - Humberto Rodrigues - [@1bberto](https://instagram.com/1bberto) - humberto_henrique1@live.com
@@ -73,15 +78,17 @@ Don't forget to give the project a star! Thanks again!
 Project Link: [https://github.com/Pub-Dev/Lesson-DotNet-UnitTest](https://github.com/Pub-Dev/Lesson-DotNet-UnitTest)
 
 <!-- ACKNOWLEDGMENTS -->
+
 ## Acknowledgments
 
-* [.NET 6](https://docs.microsoft.com/en-us/dotnet/api/?view=net-6.0)
-* [Dapper](https://dapperlib.github.io/Dapper/)
-* [XUnit](https://xunit.net/)
-* [Coverlet](https://github.com/coverlet-coverage/coverlet)
+- [.NET 6](https://docs.microsoft.com/en-us/dotnet/api/?view=net-6.0)
+- [Dapper](https://dapperlib.github.io/Dapper/)
+- [XUnit](https://xunit.net/)
+- [Coverlet](https://github.com/coverlet-coverage/coverlet)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/Pub-Dev/Lesson-DotNet-UnitTest.svg?style=for-the-badge
 [contributors-url]: https://github.com/Pub-Dev/Lesson-DotNet-UnitTest/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/Pub-Dev/Lesson-DotNet-UnitTest.svg?style=for-the-badge
