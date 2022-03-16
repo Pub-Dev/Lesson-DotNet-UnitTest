@@ -28,25 +28,27 @@ Here's why:
 
 [WIP]
 
-## Adding Migrations
+## Adding Migrations 📚
 
 ```
 Add-Migration [MigrationName] -OutputDir Configuration\Migrations
 ```
 
-## Tests
+## Tests ✍️
 
 ```
 dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
 ```
 
-## Integrated Tests
+## Tests Mutations (Stryker) 👽
 
-[WIP]
+```
+dotnet stryker -tp "tests/API.Tests/PubDev.Store.API.Tests.csproj"
+```
 
 <!-- ROADMAP -->
 
-## Roadmap
+## Roadmap 👀
 
 - Ran out of Ideas 🤣, feel free to add one
 
