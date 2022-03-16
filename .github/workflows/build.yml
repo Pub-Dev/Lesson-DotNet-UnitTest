@@ -19,6 +19,9 @@ jobs:
         with:
           dotnet-version: 6.0.x
           
+      - name: Restore DotNet Tools
+        run: dotnet tool restore
+          
       - name: Restore dependencies
         run: dotnet restore ./PubDev.Store.sln
         
@@ -64,3 +67,6 @@ jobs:
           ./.sonar/scanner/dotnet-sonarscanner begin /k:"Pub-Dev_Lesson-DotNet-UnitTest" /o:"pub-dev" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
           dotnet build ./PubDev.Store.sln --no-restore
           ./.sonar/scanner/dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+          
+      - name: Run Mutations
+        run: dotnet stryker -tp "tests/API.Tests/PubDev.Store.API.Tests.csproj"
