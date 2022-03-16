@@ -10,6 +10,10 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
+      - name: Get branch name
+        id: branch-name
+        uses: tj-actions/branch-names@v5.1
+        
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis
@@ -69,4 +73,4 @@ jobs:
           ./.sonar/scanner/dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
 
       - name: Run Mutations
-        run: dotnet stryker -tp "tests/API.Tests/PubDev.Store.API.Tests.csproj" --with-baseline:${{ github.base.ref }} --dashboard-api-key ${{ secrets.STRYKER_API_KEY }} --version ${{ github.head.ref }}
+        run: dotnet stryker -tp "tests/API.Tests/PubDev.Store.API.Tests.csproj"  --reporter "dashboard" --with-baseline:${{ steps.branch-name.outputs.base_ref_branch }} --dashboard-api-key ${{ secrets.STRYKER_API_KEY }} --version ${{ steps.branch-name.outputs.head_ref_branch }}
