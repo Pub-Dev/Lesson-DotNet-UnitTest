@@ -9,21 +9,6 @@ public class NotificationContext
     public IReadOnlyCollection<ErrorMessage> ErrorMessages { get => new ReadOnlyCollection<ErrorMessage>(_errors); }
     public bool IsValid { get => _errors.Count == 0; }
 
-    public void AddNotification(ErrorMessage errorMessage)
-    {
-        _errors.Add(errorMessage);
-    }
-
-    public void AddNotification(string errorCode, string message)
-    {
-        _errors.Add(new()
-        {
-            ErrorType = ErrorType.Validation,
-            ErrorCode = errorCode,
-            Message = message
-        });
-    }
-
     public void AddNotification(string errorCode, string message, ErrorType errorType)
     {
         _errors.Add(new()
@@ -36,21 +21,11 @@ public class NotificationContext
 
     public void AddNotFound(string errorCode, string message)
     {
-        _errors.Add(new()
-        {
-            ErrorType = ErrorType.NotFound,
-            ErrorCode = errorCode,
-            Message = message
-        });
+        AddNotification(errorCode, message, ErrorType.NotFound);
     }
 
     public void AddValidationError(string errorCode, string message)
     {
-        _errors.Add(new()
-        {
-            ErrorType = ErrorType.Validation,
-            ErrorCode = errorCode,
-            Message = message
-        });
+        AddNotification(errorCode, message, ErrorType.Validation);
     }
 }
