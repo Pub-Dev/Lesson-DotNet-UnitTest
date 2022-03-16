@@ -33,7 +33,9 @@ Add-Migration [MigrationName] -OutputDir Configuration\Migrations
 
 ## Tests
 
-[WIP]
+```
+dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+```
 
 ## Integrated Tests
 
