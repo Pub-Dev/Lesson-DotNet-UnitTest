@@ -2,7 +2,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![Mutation testing badge](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2FPub-Dev%2FLesson-Flutter-UnitTest%2Fmaster)](https://dashboard.stryker-mutator.io/reports/github.com/Pub-Dev/Lesson-Flutter-UnitTest/master)
+[![Mutation testing badge](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2FPub-Dev%2FLesson-Flutter-UnitTest%2Fmain)](https://dashboard.stryker-mutator.io/reports/github.com/Pub-Dev/Lesson-Flutter-UnitTest/main)
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Pub-Dev_Lesson-DotNet-UnitTest&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Pub-Dev_Lesson-DotNet-UnitTest)
 [![Build and Test](https://github.com/Pub-Dev/Lesson-DotNet-UnitTest/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/Pub-Dev/Lesson-DotNet-UnitTest/actions/workflows/build.yml)
