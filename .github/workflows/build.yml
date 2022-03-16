@@ -35,6 +35,9 @@ jobs:
       - name: Test
         run: dotnet test ./PubDev.Store.sln /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
 
+      - name: Run Mutations
+        run: dotnet stryker -tp "tests/API.Tests/PubDev.Store.API.Tests.csproj"  --reporter "dashboard" --with-baseline:${{ steps.branch-name.outputs.base_ref_branch }} --dashboard-api-key ${{ secrets.STRYKER_API_KEY }} --version ${{ steps.branch-name.outputs.head_ref_branch }}
+
       - name: Set up JDK 11
         uses: actions/setup-java@v1
         with:
@@ -72,5 +75,4 @@ jobs:
           dotnet build ./PubDev.Store.sln --no-restore
           ./.sonar/scanner/dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
 
-      - name: Run Mutations
-        run: dotnet stryker -tp "tests/API.Tests/PubDev.Store.API.Tests.csproj"  --reporter "dashboard" --with-baseline:${{ steps.branch-name.outputs.base_ref_branch }} --dashboard-api-key ${{ secrets.STRYKER_API_KEY }} --version ${{ steps.branch-name.outputs.head_ref_branch }}
+
