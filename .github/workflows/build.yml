@@ -84,7 +84,7 @@ jobs:
             const { issue: { number: issue_number }, repo: { owner, repo }  } = context;
             
             const message = `🚀 **Stryker report generated** 🚀
-                [![Mutation testing badge](https://img.shields.io/endpoint?style=for-the-badge&url=https://badge-api.stryker-mutator.io/github.com/Pub-Dev/Lesson-DotNet-UnitTest/feature/${{ steps.branch-name.outputs.head_ref_branch }})](https://dashboard.stryker-mutator.io/reports/github.com/Pub-Dev/Lesson-DotNet-UnitTest/${{ steps.branch-name.outputs.head_ref_branch }})
+                [![Mutation testing badge](https://img.shields.io/endpoint?style=for-the-badge&url=https://badge-api.stryker-mutator.io/github.com/Pub-Dev/Lesson-DotNet-UnitTest/${{ steps.branch-name.outputs.head_ref_branch }})](https://dashboard.stryker-mutator.io/reports/github.com/Pub-Dev/Lesson-DotNet-UnitTest/${{ steps.branch-name.outputs.head_ref_branch }})
                 to more details: https://dashboard.stryker-mutator.io/reports/github.com/Pub-Dev/Lesson-DotNet-UnitTest/${{ steps.branch-name.outputs.head_ref_branch }}`;
 
             github.issues.createComment({ 
