@@ -85,6 +85,7 @@ Project Link: [https://github.com/Pub-Dev/Lesson-DotNet-UnitTest](https://github
 - [Dapper](https://dapperlib.github.io/Dapper/)
 - [XUnit](https://xunit.net/)
 - [Coverlet](https://github.com/coverlet-coverage/coverlet)
+- [Stryker](https://stryker-mutator.io/)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
