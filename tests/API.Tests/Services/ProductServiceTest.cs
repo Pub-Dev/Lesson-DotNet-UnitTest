@@ -18,9 +18,15 @@ public class ProductServiceTest
         // arrange
         _mockProductRepository
             .Setup(x => x.CreateAsync(It.IsAny<Product>()))
-            .ReturnsAsync(new Product());
+            .ReturnsAsync(new Product()
+            {
+                CreateDate = System.DateTime.Now,
+                Name = "PubDev",
+                ProductId = 1
+            });
 
         var service = GetProductService();
+
         var product = new Product()
         {
             Name = "test",
@@ -154,9 +160,9 @@ public class ProductServiceTest
         _mockProductRepository.Verify(x => x.UpdateAsync(It.IsAny<Product>()), Times.Never);
     }
 
-    public static IEnumerable<object[]> InvalidScenarioUpdateProduct = new[] 
-    { 
-        new object[] 
+    public static IEnumerable<object[]> InvalidScenarioUpdateProduct = new[]
+    {
+        new object[]
         {
             new Product()
             {

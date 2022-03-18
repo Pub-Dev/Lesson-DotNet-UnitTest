@@ -25,7 +25,7 @@ public class ClientServiceTest
         // act
         var data = await service.CreateAsync(new());
 
-        // assert
+        // assert        
         Assert.NotNull(data);
         _mockClientRepository.Verify(x => x.CreateAsync(It.IsAny<Client>()), Times.Once);
     }
@@ -43,7 +43,7 @@ public class ClientServiceTest
         // act
         var data = await service.GetAllAsync();
 
-        // assert
+        // assert        
         Assert.NotNull(data);
         _mockClientRepository.Verify(x => x.GetAllAsync(), Times.Once);
     }
@@ -61,7 +61,7 @@ public class ClientServiceTest
         // act
         var data = await service.GetByIdAsync(1);
 
-        // assert
+        // assert        
         Assert.Null(data);
         Assert.False(_notificationContext.IsValid);
         Assert.Contains(_notificationContext.ErrorMessages,
@@ -84,7 +84,7 @@ public class ClientServiceTest
         // act
         var data = await service.GetByIdAsync(1);
 
-        // assert
+        // assert        
         Assert.NotNull(data);
         Assert.True(_notificationContext.IsValid);
         _mockClientRepository.Verify(x => x.GetByIdAsync(It.IsAny<int>()), Times.Once);
@@ -108,7 +108,7 @@ public class ClientServiceTest
         // act
         var data = await service.UpdateAsync(client);
 
-        // assert
+        // assert        
         Assert.Null(data);
         Assert.Contains(_notificationContext.ErrorMessages,
             x => x.ErrorCode == Error.Client.NOT_FOUND &&
@@ -137,10 +137,27 @@ public class ClientServiceTest
         // act
         var data = await service.UpdateAsync(client);
 
-        // assert
+        // assert        
         Assert.NotNull(data);
         Assert.True(_notificationContext.IsValid);
         _mockClientRepository.Verify(x => x.GetByIdAsync(It.IsAny<int>()), Times.Once);
         _mockClientRepository.Verify(x => x.UpdateAsync(It.IsAny<Client>()), Times.Once);
+    }
+
+    [Fact]
+    public void Test_Sum()
+    {
+        // arrange
+        var a = 10;
+        var b = 5;
+        var expected = 15;
+
+        var service = GetClientService();
+
+        // act
+        var result = service.Sum(a, b);
+
+        // assert
+        Assert.Equal(expected, result);
     }
 }

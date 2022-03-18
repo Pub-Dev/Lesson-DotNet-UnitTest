@@ -1,6 +1,6 @@
-﻿namespace PubDev.Store.API.Tests.TestCases
+﻿namespace PubDev.Store.API.Tests.Services
 {
-    public static class OrderServiceTestCase
+    public static class OrderServiceTestData
     {
         public static IEnumerable<object[]> WithProductNotFoundAndWithInvalidQuantity = new[]
         {

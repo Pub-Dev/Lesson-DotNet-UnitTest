@@ -55,4 +55,9 @@ public class ClientService : IClientService
 
         return null;
     }
+
+    public int Sum(int a, int b)
+    {
+        return a + b;
+    }
 }
