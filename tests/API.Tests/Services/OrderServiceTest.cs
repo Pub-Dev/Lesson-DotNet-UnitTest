@@ -1,6 +1,4 @@
-﻿using PubDev.Store.API.Tests.TestCases;
-
-namespace PubDev.Store.API.Tests.Services;
+﻿namespace PubDev.Store.API.Tests.Services;
 
 public class OrderServiceTest
 {
@@ -182,7 +180,7 @@ public class OrderServiceTest
     [Fact]
     public async Task CreateAsync_WithListOfProductRepeated_ReturnsNull()
     {
-        // prepare
+        // arrange
         _mockClientRepository
             .Setup(x => x.GetByIdAsync(It.IsAny<int>()))
             .ReturnsAsync(new Client());
@@ -316,8 +314,9 @@ public class OrderServiceTest
     }
 
     [Theory]
-    [MemberData(nameof(OrderServiceTestCase.WithProductNotFoundAndWithInvalidQuantity), MemberType = typeof(OrderServiceTestCase))]
-
+    [MemberData(
+        nameof(OrderServiceTestData.WithProductNotFoundAndWithInvalidQuantity), 
+        MemberType = typeof(OrderServiceTestData))]
     public async Task CreateAsync_WithProductNotFoundAndWithInvalidQuantity_ReturnsNull(Order order)
     {
         // arrange

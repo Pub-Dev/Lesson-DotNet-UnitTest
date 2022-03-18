@@ -64,9 +64,9 @@ public class OrderService : IOrderService
             return null;
         }
 
-        var productDisctinct = order.OrderProducts.Select(x => x.ProductId).Distinct();
+        var productDistinct = order.OrderProducts.Select(x => x.ProductId).Distinct();
 
-        if (productDisctinct.Count() < order.OrderProducts.Count)
+        if (productDistinct.Count() < order.OrderProducts.Count)
         {
             _notificationContext.AddValidationError(Error.Order.PRODUCT_REPEATED, $"Order should have a list of distict products");
 

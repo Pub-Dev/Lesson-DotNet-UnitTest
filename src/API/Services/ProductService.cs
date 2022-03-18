@@ -41,7 +41,8 @@ public class ProductService : IProductService
     {
         if (product.Value <= 0)
         {
-            _notificationContext.AddValidationError(Error.Product.INVALID_VALUE, "Product value should be greater than 0");
+            _notificationContext.AddValidationError(
+                Error.Product.INVALID_VALUE, "Product value should be greater than 0");
 
             return null;
         }
